@@ -1,0 +1,29 @@
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+
+
+DROP TABLE IF EXISTS Vivero;
+DROP TABLE IF EXISTS Zona;
+DROP TABLE IF EXISTS Caja;
+DROP TABLE IF EXISTS Almacen;
+DROP TABLE IF EXISTS Zona_exterior;
+DROP TABLE IF EXISTS Contiene;
+DROP TABLE IF EXISTS Compra;
+DROP TABLE IF EXISTS Empleado;
+DROP TABLE IF EXISTS Cliente;
+DROP TABLE IF EXISTS Fidelizado;
+DROP TABLE IF EXISTS No_fidelizado;
+DROP TABLE IF EXISTS Producto;
+
+
+
+CREATE TABLE Producto(
+  Producto_id INT,
+  Nombre VARCHAR(255),
+  PRIMARY KEY (Producto_id)
+);
+
+INSERT INTO Producto (Producto_id, Nombre)
+VALUES (123, 'Pala');
+
+
